@@ -13,10 +13,13 @@ Gem::Specification.new do |s|
   s.description = 'Retry read queries automatically when disconnected from the database'
   s.summary     = s.description
   s.files       = Dir['{lib}/**/*', 'README.md']
-  #s.test_files = Dir['spec/**/*']
-  s.license       = "MIT"
+  s.test_files  = Dir['spec/**/*']
+  s.license     = "MIT"
 
   s.add_dependency 'rails', '>= 7.1.0'
 
-  #s.add_development_dependency 'minitest', '~> 5.0'
+  s.add_development_dependency 'appraisal'
+  s.add_development_dependency 'activerecord', '~> 7.1'
+  s.add_development_dependency 'minitest', '~> 5.0'
+  s.add_development_dependency 'rake'
 end
