@@ -8,7 +8,7 @@ Supports Rails 7.1+ and the `mysql2`, `postgresql`, `sqlite3`, or `trilogy` adap
 In your Gemfile:
 
 ```
-gem 'activerecord-mysql-reconnect'
+gem 'activerecord-retry-reads'
 ```
 
 ## Usage
