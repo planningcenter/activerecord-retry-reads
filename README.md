@@ -22,3 +22,12 @@ Historically, gems like [activerecord-mysql-reconnect](https://github.com/planni
 Rails 7.1 added native reconnect and retry functionality, but it is _extremely_ conservative about what queries are automatically retried. In almost every Rails app any _read_ query is idempotent and safe to retry. If this is not true in your app, do not use this gem!
 
 This gem expands the automatic retry functionality added in Rails 7.1 to enable retries for every _read_ query.
+
+## Testing
+
+Run tests with:
+
+```
+bundle exec appraisal install
+bundle exec appraisal rake test
+```

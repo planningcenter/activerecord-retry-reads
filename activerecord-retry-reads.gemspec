@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '>= 7.1.0'
 
   s.add_development_dependency 'appraisal'
-  s.add_development_dependency 'activerecord', '~> 7.1'
   s.add_development_dependency 'minitest', '~> 5.0'
   s.add_development_dependency 'rake'
 end
