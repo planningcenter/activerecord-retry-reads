@@ -15,7 +15,7 @@ module ActiveRecord
       PostgreSQL::DatabaseStatements.prepend(AutoRetryAllReads)
     end
     ActiveSupport.on_load(:active_record_sqlite3adapter) do
-      Sqlite3::DatabaseStatements.prepend(AutoRetryAllReads)
+      SQLite3::DatabaseStatements.prepend(AutoRetryAllReads)
     end
     ActiveSupport.on_load(:active_record_trilogyadapter) do
       Trilogy::DatabaseStatements.prepend(AutoRetryAllReads)
