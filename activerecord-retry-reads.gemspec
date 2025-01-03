@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.test_files  = Dir['spec/**/*']
   s.license     = "MIT"
 
+  s.required_ruby_version = Gem::Requirement.new(">= 3.2.0")
+
   s.add_dependency 'rails', '>= 7.1.0'
 
   s.add_development_dependency 'appraisal'
