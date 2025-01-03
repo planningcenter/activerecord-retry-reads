@@ -2,9 +2,9 @@
 module ActiveRecord
   module ConnectionAdapters
     module AutoRetryAllReads
-      def raw_execute(sql, name, **kwargs)
+      def raw_execute(sql, name, binds = [], **kwargs)
         kwargs[:allow_retry] = true if !write_query?(sql)
-        super(sql, name, **kwargs)
+        super(sql, name, binds, **kwargs)
       end
     end
 
