@@ -7,5 +7,5 @@ appraise "rails-latest" do
 end
 
 appraise "rails-main" do
-  gem "rails", git: "https://github.com/rails/rails"
+  gem "rails", git: "https://github.com/rails/rails", branch: "main"
 end
