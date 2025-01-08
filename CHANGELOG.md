@@ -1,6 +1,7 @@
 # Unreleased
 
-Add devbox config
+- Add devbox config
+- Add support for Rails 8
 
 # 1.0.1 (Mar 25, 2024)
 
