@@ -1,5 +1,7 @@
 # Unreleased
 
+# 2.0.0 (Jan 9, 2025)
+
 - Add devbox config
 - Add support for Rails 8
 - Breaking: Drop support for Rails < 8 (Please continue using 1.x if you are on Rails 7.x)
