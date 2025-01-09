@@ -1,12 +1,13 @@
 require "minitest/autorun"
 require "active_support"
+require "active_record"
 require "activerecord-retry-reads"
 
 module ActiveRecord
   module ConnectionAdapters
     module FakeAdapter
       class DatabaseStatements
-        def raw_execute(sql, name, allow_retry: false)
+        def raw_execute(sql, name = nil, binds = [], allow_retry: false)
           # Returning allow_retry just makes the tests here easier
           return allow_retry
         end

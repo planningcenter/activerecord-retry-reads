@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files  = Dir['spec/**/*']
   s.license     = "MIT"
 
-  s.add_dependency 'rails', '>= 7.1.0'
+  s.add_dependency 'rails', '>= 8.0.0'
 
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'minitest', '~> 5.0'

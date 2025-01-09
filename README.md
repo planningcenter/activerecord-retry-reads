@@ -4,6 +4,11 @@ Automatically retry read queries.
 
 Supports Rails 7.1+ and the `mysql2`, `postgresql`, `sqlite3`, or `trilogy` adapters.
 
+| Rails | AR-R-R |
+|-------|--------|
+| 7.x   | 1.x    |
+| 8.x   | 2.x    |
+
 ## Installation
 In your Gemfile:
 
